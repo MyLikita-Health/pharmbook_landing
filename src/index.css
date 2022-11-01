@@ -1,0 +1,89 @@
+:root{
+  --primary: rgba(0,0,0,.5);
+  --secondry: rgba(0,0,0,.5);
+  --primary1: #6c4eec;
+  --secondry1: #a67df9;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header_nav{
+  display: flex;
+  justify-content: space-around;
+}
+.First_body{
+  background:linear-gradient(135deg, var(--primary), var(--secondry)),
+   url(./5172658.jpg);
+   width: 100%;
+   height: 700px;
+   background-position: center;
+   background-size: cover;
+}
+.title{
+  /* margin-top: 45%; */
+  font-size: 40px;
+}
+.Discribtion{
+  color: #cccccc;
+}
+.signUp_col{
+  margin-top: 33%;
+  margin-left: 90px;
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 70%;
+}
+.input{
+  width: 100%;
+  font-size: 18px;
+  padding: 5px 13px;
+  outline: transparent;
+  border: 1px solid #cccccc;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+.Submit{
+  padding: 5px;
+  border-radius: 25%;
+  margin-top: 20px;
+  width: 150px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.Why_us{
+  background: linear-gradient(to right, var(--primary1), var(--secondry1));
+  height: 550px;
+  z-index: -1;
+}
+.detail{
+  margin-top: 50px;
+  margin-left: 100px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
+  background-color: #fff;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+.detail:hover{
+  background-color: #a67df9;
+  transition: 2s;
+}
