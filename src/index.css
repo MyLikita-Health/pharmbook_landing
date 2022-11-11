@@ -1,9 +1,12 @@
 :root{
-  --primary: rgba(0,0,0,.5);
-  --secondry: rgba(0,0,0,.5);
+  --primary: rgba(0,0,0,.4);
+  --secondry: rgba(0,0,0,.4);
   --primary1: #206040;
   --ahamd: #2d8659;
   --secondry1: #339966;
+  --color1: #66b0ff;
+  --color2: #0077f6;
+  --color3: #0063cc;
 }
 *{
   margin: 0;
@@ -25,32 +28,60 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.head{
+  background-color: #432101;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
+  position: fixed;
+  width: 100%;
+  /* background:linear-gradient(135deg, rgba(0,0,0,.1), rgba(0,0,0,1)); */
+  /* background: linear-gradient(to right, var(--primary1),var(--ahamd), var(--secondry1)); */
+  /* background: linear-gradient(to right, var(--primary),var(--secondry)); */
+  height: 70px;
+}
 .header_nav{
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+.register{
+  padding: 10px 40px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #fff;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  color: #fff;
+  transition: 1s;
+}
+.register:hover{
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transition: 1s;
 }
 .First_body{
   background:linear-gradient(135deg, var(--primary), var(--secondry)),
-   url(./5172658.jpg);
+   url(./Images/R\ \(2\).jpg);
    width: 100%;
    height: 700px;
    background-position: center;
    background-size: cover;
 }
 .title{
-  /* margin-top: 45%; */
+  margin-top: 45%;
   font-size: 40px;
 }
 .Discribtion{
   color: #cccccc;
 }
 .signUp_col{
-  margin-top: 33%;
-  margin-left: 90px;
+  /* margin-top: 100%;
+  margin-left: 90px; */
   padding: 30px;
   background-color: whitesmoke;
   border-radius: 10px;
-  width: 70%;
+  width: 250%;
 }
 .input{
   width: 100%;
@@ -70,7 +101,7 @@ code {
   font-weight: 500;
 }
 .Why_us{
-  background: linear-gradient(to right, var(--primary1),var(--ahamd), var(--secondry1));
+  background: linear-gradient(to right, var(--color2),var(--color3), var(--color1));
   transition: 2s;
   height: 550px;
   z-index: -1;
@@ -91,11 +122,11 @@ code {
   transition: 3s;
 }
 .detail:hover{
-  background-color: #26734d;
+  background-color: var(--color1);
   transition: 2s;
 }
 .circle{
-  background-color: #26734d;
+  background-color: var(--color1);
   width: 60px;
   height: 60px;
   padding: 10px;
@@ -105,7 +136,7 @@ code {
 }
 .detail:hover .circle{
   background-color: #fff;
-  color: #26734d;
+  color: var(--color1);
   transition: 2s;
 }
 .detail{
@@ -127,8 +158,8 @@ code {
 .qoutes{
   margin-top: 100px;
   margin-left: 40px;
-  width: 450px;
-  height: 400px;
+  width: 380px;
+  height: 550px;
   border-radius: 10px;
   margin-bottom: 100px;
   box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(156,39,176,.4);
@@ -137,13 +168,200 @@ code {
 }
 .qoutation_mark{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #26734d;
+  background-color: var(--color1);
   color: #fff;
   padding-top: -100px;
   font-size: 100px;
   width: 22%;
   height: 90px;
   margin-top: -50px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   border-radius: 50%;
+}
+.href{
+  color: #fff;
+  /* margin-top: 10px;/ */
+  margin: 10px;
+  font-size: 19px;
+  text-decoration: none;
+  transition: 2s;
+}
+.href:hover{
+  text-decoration: underline;
+  color: #fff;
+  transition: 2s;
+}
+.About_us{
+  justify-content: space-between;
+}
+.footer-first-div{
+  background-color: #432101;
+  /* background: linear-gradient(to right, var(--color2)); */
+/*  */
+}
+.box {
+  margin-top: -250px;
+  z-index: -1;
+	border-radius: 150px;
+	background:#fff;
+	position:relative;
+	overflow: hidden;
+	text-align:center;
+}
+.box:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 100%;
+    border-radius: 150px;
+    box-shadow: inset 0 0 25px rgba(0,0,0,0.30);
+    transition: all 0.3s ease;
+    background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+}
+.box:hover:before {
+    width: 100%;
+}
+.box:hover .image-wrapper {
+	padding:0;
+}
+.box:hover .box-desc {
+	color:#fff;
+}
+.box:hover .social li a {
+	background:#fff;
+	background-image: none;
+	color:#000;
+}
+.box:hover .social li a:hover {
+	background:#1d1d1d;
+	color:#fff;
+}
+.image-wrapper {
+    position: relative;
+	max-width: 210px;
+    max-height: 210px;
+	margin:0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all 0.5s ease;
+    box-shadow: inset 0px 0px 20px rgba(0,0,0,0.20);
+}
+.image-wrapper img {
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+.box-desc {
+	position:relative;
+}
+ul.social {
+	padding:0;
+}
+ul.social li {
+	display:inline-block;
+	list-style-type:none;
+}
+ul.social li a {
+	position:relative;
+	width: 36px;
+    height: 36px;
+	background-image: linear-gradient(to right, #3c70a4 0%, #64b2cd 100%);
+	display:inline-block;
+	line-height:36px;
+	border-radius:50%;
+	color:#fff;
+	transition: all .5s ease;
+}
+
+/* media Querry */
+
+@media (max-width: 960px) {
+  .First_body{
+    width: 100%;
+  }
+  .our_service{
+    display: flex;
+    flex-direction: column;
+  }
+  .About_us{
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .imager{
+    width: 100%;
+  }
+  .signUp_col{
+    display: none;
+  }
+  .Why_us{
+    width: 100%;
+    margin-bottom: 320%;
+    display: flex;
+    flex-direction: column;
+  }
+  .detail{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .testimonial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .qoutes{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .About-us{
+    margin-left: -20%;
+  }
+}
+@media (max-width: 560px){
+  .First_body{
+    width: 100%;
+  }
+  .our_service{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .About_us{
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .imager{
+    width: 100%;
+  }
+  .signUp_col{
+    display: none;
+  }
+  .Why_us{
+    width: 100%;
+    /* margin-top: 200%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .detail{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .testimonial{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .qoutes{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .About-us{
+    margin-left: -20%;
+  }
 }

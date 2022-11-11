@@ -1,0 +1,8 @@
+.href_link{
+    color: #6c757d;
+    text-decoration: none;
+}
+.href_link:hover{
+    background-color: transparent;
+    color: #a6a6a6;
+}
